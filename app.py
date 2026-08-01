@@ -89,11 +89,12 @@ def detect(video_path, conf, imgsz, progress=gr.Progress()):
     return str(h264_out), "\n".join(lines)
 
 
-with gr.Blocks(title="YOLO26 Video Object Detection") as demo:
+with gr.Blocks(title="CNC Object Detection Tool") as demo:
     gr.Markdown(
-        "# Video Object Detection (YOLO26)\n"
-        "Upload a video clip. All COCO classes are detected (people, cars, trucks, animals, etc.) "
-        "with bounding boxes drawn, and you get back the annotated video."
+        "# CNC (Code n Consult) — Object Detection Tool\n"
+        "An exploration of the YOLO26 model for video object detection. Upload a video clip and "
+        "all COCO classes (people, cars, trucks, animals, etc.) are detected with bounding boxes "
+        "drawn, and you get back the annotated video along with a detection summary."
     )
     with gr.Row():
         with gr.Column():
