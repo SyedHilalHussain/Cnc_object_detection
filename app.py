@@ -92,9 +92,11 @@ def detect(video_path, conf, imgsz, progress=gr.Progress()):
 with gr.Blocks(title="CNC Object Detection Tool") as demo:
     gr.Markdown(
         "# CNC (Code n Consult) — Object Detection Tool\n"
-        "An exploration of the YOLO26 model for video object detection. Upload a video clip and "
-        "all COCO classes (people, cars, trucks, animals, etc.) are detected with bounding boxes "
-        "drawn, and you get back the annotated video along with a detection summary."
+        "A test deployment for benchmarking the YOLO26 model's detection accuracy and inference "
+        "performance on video input. Upload a clip to run inference across all COCO classes "
+        "(people, cars, trucks, animals, etc.) — bounding boxes are drawn per frame, and you get "
+        "back the annotated video along with a detection summary (class counts, confidence "
+        "threshold used). This build is for evaluation purposes only, not a production service."
     )
     with gr.Row():
         with gr.Column():
